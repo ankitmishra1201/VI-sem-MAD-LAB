@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/keywords_filter"
+        android:title="@string/keywords_filter"
+        android:icon="@android:drawable/ic_menu_search"
+        />
+    <item
+        android:id="@+id/sort_filter"
+        android:title="@string/sort_filter"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+       />
+</menu>

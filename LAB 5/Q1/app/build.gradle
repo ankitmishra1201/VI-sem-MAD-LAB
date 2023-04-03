@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.vechileregistration'
+    namespace 'com.example.l5q1'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.vechileregistration"
+        applicationId "com.example.l5q1"
         minSdk 24
         targetSdk 33
         versionCode 1

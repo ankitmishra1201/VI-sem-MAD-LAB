@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="types">
+        <item>@string/place_1</item>
+        <item>@string/place_2</item>
+        <item>@string/place_3</item>
+
+    </string-array>
+    <string name="place_1">Car</string>
+    <string name="place_2">Bike</string>
+    <string name="place_3">Truck</string>
+
+</resources>

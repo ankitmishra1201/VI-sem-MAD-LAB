@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+    <string name="demonitization_content">De-monetization is the act of stripping a currency unit of its status as legal tender.</string>
+    <string name="keywords_filter">Filter by Keywords</string>
+    <string name="sort_filter">Sort Alphabetically</string>
+</resources>

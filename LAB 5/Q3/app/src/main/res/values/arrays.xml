@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="places">
+        <item>@string/place_1</item>
+        <item>@string/place_2</item>
+        <item>@string/place_3</item>
+        <item>@string/place_4</item>
+        <item>@string/place_5</item>
+        <item>@string/place_6</item>
+        <item>@string/place_7</item>
+        <item>@string/place_8</item>
+    </string-array>
+    <string name="place_1">AB</string>
+    <string name="place_2">CD</string>
+    <string name="place_3">EF</string>
+    <string name="place_4">GH</string>
+    <string name="place_5">IJ</string>
+    <string name="place_6">KL</string>
+    <string name="place_7">MN</string>
+    <string name="place_8">OP</string>
+</resources>
