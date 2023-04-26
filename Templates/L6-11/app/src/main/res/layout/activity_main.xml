@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+    <!--Edit text to enter course name-->
+
+    <EditText
+
+        android:id="@+id/idEdtCourseName"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:hint="Enter course Name"
+        android:minHeight="48dp" />
+
+
+    <!--edit text to enter course duration-->
+
+    <EditText
+
+        android:id="@+id/idEdtCourseDuration"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:hint="Enter Course Duration"
+        android:minHeight="48dp" />
+
+
+    <!--edit text to display course tracks-->
+
+    <EditText
+
+        android:id="@+id/idEdtCourseTracks"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:hint="Enter Course Tracks"
+        android:minHeight="48dp" />
+
+
+    <!--edit text for course description-->
+
+    <EditText
+
+        android:id="@+id/idEdtCourseDescription"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:hint="Enter Course Description"
+        android:minHeight="48dp" />
+
+
+    <!--button for adding new course-->
+
+    <Button
+
+        android:id="@+id/idBtnAddCourse"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:background="@color/purple_200"
+
+        android:text="Add Course"
+        android:textAllCaps="false" />
+
+
+    <!--new button for opening our course list activity-->
+
+    <Button
+
+        android:id="@+id/idBtnReadCourse"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:background="@color/purple_500"
+
+        android:text="Read All Courses"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LAB 9 STUFF"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text="Share" />
+
+    <Button
+        android:id="@+id/showMenuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Show Popup Menu"
+        />
+
+
+
+</LinearLayout>
+ 
