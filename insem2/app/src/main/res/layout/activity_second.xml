@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <EditText
+
+        android:id="@+id/nameET"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="9dp"
+        android:hint="Enter Name"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:id="@+id/salaryET"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="9dp"
+        android:hint="EnterSalary"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameET" />
+
+    <EditText
+
+        android:id="@+id/comissionET"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="9dp"
+        android:hint="Enter Comission"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salaryET" />
+
+    <Button
+
+        android:id="@+id/submitbtn"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="216dp"
+        android:background="@color/purple_200"
+        android:text="Add "
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comissionET" />
+</androidx.constraintlayout.widget.ConstraintLayout>
