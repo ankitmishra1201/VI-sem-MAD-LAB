@@ -46,7 +46,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
     // this method is use to add new course to our sqlite database.
 
-    public void addNewCourse(String courseName, String courseDuration, String courseDescription, String courseTracks) {
+    public void addNewCourse(String courseName, String courseDuration, String courseTracks) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(NAME_COL, courseName);

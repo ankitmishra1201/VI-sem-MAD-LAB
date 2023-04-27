@@ -14,10 +14,9 @@ public class CourseModal {
 
     // creating getter and setter methods
 
-    public String getName() { return Name; }
-    public void getName(String courseName)
-    {
-        this.Name = courseName;
+
+    public String getName() {
+        return Name;
     }
 
     public String getEmail()

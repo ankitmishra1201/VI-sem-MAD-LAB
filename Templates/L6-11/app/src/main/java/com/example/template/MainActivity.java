@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         showMenuBtn=findViewById(R.id.showMenuBtn);
         dbHandler = new DBHandler(MainActivity.this);
 
-
+//////////**********************POPUP MENU********************************************///
         PopupMenu popupMenu = new PopupMenu(
                 this,
                 showMenuBtn
@@ -96,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//////////**********************POPUP MENU END********************************************///
+
 ///*****************************SQLLITE PORTION*********************************///
         addCourseBtn.setOnClickListener(new View.OnClickListener() {
 
@@ -115,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // on below line we are calling a method to add new
                 // course to sqlite data and pass all our values to it.
-                dbHandler.addNewCourse(courseName, courseDuration, courseDescription, courseTracks);
+                dbHandler.addNewCourse(courseName, courseDuration, courseTracks);
 
                 // after adding the data we are displaying a toast message.
                 Toast.makeText(MainActivity.this, "Course has been added.", Toast.LENGTH_SHORT).show();
