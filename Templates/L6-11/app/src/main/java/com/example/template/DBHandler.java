@@ -46,12 +46,12 @@ public class DBHandler extends SQLiteOpenHelper {
 
     // this method is use to add new course to our sqlite database.
 
-    public void addNewCourse(String courseName, String courseDuration, String courseTracks) {
+    public void addNewCourse(String name, String email, String phone) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(NAME_COL, courseName);
-        values.put(Email_COL, courseDuration);
-        values.put(Phone_COL, courseTracks);
+        values.put(NAME_COL, name);
+        values.put(Email_COL, email);
+        values.put(Phone_COL, phone);
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
@@ -78,24 +78,24 @@ public class DBHandler extends SQLiteOpenHelper {
 
     // below is the method for updating our courses
 
-    public void updateCourse(String originalCourseName, String courseName, String courseDescription,
-                             String courseTracks, String courseDuration) {
+    public void updateCourse(String originalName, String Name,
+                             String Email, String Phone) {
 
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        values.put(NAME_COL, courseName);
-        values.put(Email_COL, courseDuration);
-        values.put(Phone_COL, courseTracks);
-        db.update(TABLE_NAME, values, "name=?", new String[]{originalCourseName});
+        values.put(NAME_COL, Name);
+        values.put(Email_COL, Email);
+        values.put(Phone_COL, Phone);
+        db.update(TABLE_NAME, values, "name=?", new String[]{originalName});
         db.close();
     }
 
-    public void deleteCourse(String courseName) {
+    public void deleteCourse(String Name) {
 
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(TABLE_NAME, "name=?", new String[]{courseName});
+        db.delete(TABLE_NAME, "name=?", new String[]{Name});
         db.close();
     }
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleBarTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/TitleBarStyle</item>
+    </style>
+
+    <style name="TitleBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/TitleBarTextStyle</item>
+    </style>
+
+
+</resources>

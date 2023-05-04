@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         showMenuBtn=findViewById(R.id.showMenuBtn);
         dbHandler = new DBHandler(MainActivity.this);
 
-//////////**********************POPUP MENU********************************************///
+//////////**********************POPUP MENU********************************************////////////
         PopupMenu popupMenu = new PopupMenu(
                 this,
                 showMenuBtn
@@ -98,46 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
 //////////**********************POPUP MENU END********************************************///
 
-///*****************************SQLLITE PORTION*********************************///
-        addCourseBtn.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                String courseName = courseNameEdt.getText().toString();
-                String courseTracks = courseTracksEdt.getText().toString();
-                String courseDuration = courseDurationEdt.getText().toString();
-                String courseDescription = courseDescriptionEdt.getText().toString();
-
-                // validating if the text fields are empty or not.
-                if (courseName.isEmpty() || courseTracks.isEmpty() || courseDuration.isEmpty() || courseDescription.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-
-                // on below line we are calling a method to add new
-                // course to sqlite data and pass all our values to it.
-                dbHandler.addNewCourse(courseName, courseDuration, courseTracks);
-
-                // after adding the data we are displaying a toast message.
-                Toast.makeText(MainActivity.this, "Course has been added.", Toast.LENGTH_SHORT).show();
-                //RESETING TEXT FIELD
-                courseNameEdt.setText("");
-                courseDurationEdt.setText("");
-                courseTracksEdt.setText("");
-                courseDescriptionEdt.setText("");
-            }
-        });
-
-
-        readCourseBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // opening a new activity via a intent.
-                Intent i = new Intent(MainActivity.this,ViewCourses.class);
-                startActivity(i);
-            }
-        });
+///*****************************SQLLITE PORTION*******************************
 ///*****************************END OF SQLLITE PART*******************************************************************///
 
 ///*********************************************SHARE INTENT*********************************************************///

@@ -39,9 +39,9 @@ public class CourseRVAdapter extends RecyclerView.Adapter<CourseRVAdapter.ViewHo
         // on below line we are setting data
         // to our views of recycler view item.
         CourseModal modal = courseModalArrayList.get(position);
-        holder.courseNameTV.setText(modal.getName());
-        holder.courseDescTV.setText(modal.getEmail());
-        holder.courseDurationTV.setText(modal.getPhone());
+        holder.name.setText(modal.getName());
+        holder.email.setText(modal.getEmail());
+        holder.phone.setText(modal.getPhone());
 
 
         // below line is to add on click listener for our recycler view item.
@@ -73,15 +73,15 @@ public class CourseRVAdapter extends RecyclerView.Adapter<CourseRVAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         // creating variables for our text views.
-        private TextView courseNameTV, courseDescTV, courseDurationTV, courseTracksTV;
+        private TextView name, email, phone;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             // initializing our text views
-            courseNameTV = itemView.findViewById(R.id.idTVCourseName);
-            courseDescTV = itemView.findViewById(R.id.idTVCourseDescription);
-            courseDurationTV = itemView.findViewById(R.id.idTVCourseDuration);
-            courseTracksTV = itemView.findViewById(R.id.idTVCourseTracks);
+            name = itemView.findViewById(R.id.idTVName);
+            email = itemView.findViewById(R.id.idTVEmail);
+            phone = itemView.findViewById(R.id.idTVPhone);
+
         }
     }
 }
